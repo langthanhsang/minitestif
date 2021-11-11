@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="canha" value()=" ">
+<input type="text" id="canhb" value()=" ">
+<input type="button"  onclick="area()" value="area">
+<p id="game"></p>
+
+<body>
+<script>
+    // bài 4  a;
+    function area() {
+        let a = parseInt(document.getElementById('canha').value);
+        let b = parseInt(document.getElementById('canhb').value);
+        let c = parseInt(document.getElementById('canhc').value);
+        S = a * b;
+        C = 2 * a * b;
+         result1= a**2;
+        result2 = a**b;
+        tongab = a
+
+        document.getElementById('game').innerHTML= ('diện tích là: ' + S);
+        document.getElementById('game').innerHTML= ('chu vi là: ' + C);
+        document.getElementById('game').innerHTML= ('bình phương a^2 la: ' + result1);
+        document.getElementById('game').innerHTML= ('bình phương a ^b là: ' + result2);
+
+
+    }
+    // bài 4 e
+    // điều kiên là một tam giác
+    let cạnha = +prompt(' nhập chỉ số cạnh');
+    let cạnhb = +prompt(' nhập chỉ số cạnh');
+    let cạnhac = +prompt(' nhập chỉ số cạnh');
+    if( a + b > c || b + c > a || a + c > b){
+      alert('abc là một tapm giác') ;
+    }
+    // điều kiên tam giác cân:
+    if( a == b || b == c || c == b) {
+        alert('abc là tam giác cân')
+    }
+    // tam giác đều
+    if ( a == b && b == c && c == a) {
+        alert('abc là tam giác điều')
+    }
+    // tam giác vuông
+
+
+
+</script>
+
+</body>
+</html>

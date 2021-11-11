@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="inputa" value="" placeholder="nhập số a">
+<input type="text" id="inputb" value="" placeholder="nhập số b">
+<input type="button" onclick="tich()" value="tich">
+<h1 id="result"> </h1>
+<body>
+<script>
+    function tich (){
+        let a = parseInt(document.getElementById('inputa').value);
+        let b = parseInt(document.getElementById('inputb').value);
+        result = a * b
+        document.getElementById('result').innerHTML=('diên tích a * b la : ' + result)
+    }
+
+
+</script>
+
+
+</body>
+</html>
